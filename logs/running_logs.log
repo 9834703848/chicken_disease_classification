@@ -132,3 +132,206 @@ x==========x]
 [2024-08-13 19:07:00,637: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-08-13 19:40:36,792: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-13 19:40:36,792: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-13 19:40:36,792: INFO: common: created directory at: artifacts]
+[2024-08-13 19:40:36,792: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-13 19:40:36,792: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-13 19:45:26,096: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-13 19:45:26,098: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-13 19:45:26,099: INFO: common: created directory at: artifacts]
+[2024-08-13 19:45:26,100: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-13 19:45:26,101: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-13 19:45:26,102: INFO: common: created directory at: artifacts\training]
+[2024-08-15 15:13:52,335: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:13:52,340: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:13:52,342: INFO: common: created directory at: artifacts]
+[2024-08-15 15:13:52,343: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:13:52,344: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:14:49,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:14:49,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:14:49,839: INFO: common: created directory at: artifacts]
+[2024-08-15 15:14:49,840: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:14:49,841: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:14:49,844: INFO: common: created directory at: artifacts\training]
+[2024-08-15 15:22:58,726: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:22:58,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:22:58,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:22:58,731: INFO: common: created directory at: artifacts]
+[2024-08-15 15:22:58,732: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:22:58,732: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:22:59,221: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:22:59,222: INFO: main: *******************]
+[2024-08-15 15:22:59,222: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-08-15 15:22:59,225: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:22:59,227: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:22:59,228: INFO: common: created directory at: artifacts]
+[2024-08-15 15:22:59,228: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-08-15 15:22:59,735: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-15 15:23:00,052: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-15 15:23:00,054: INFO: main: *******************]
+[2024-08-15 15:23:00,054: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-08-15 15:23:00,057: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:23:00,059: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:23:00,060: INFO: common: created directory at: artifacts]
+[2024-08-15 15:23:00,061: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:23:00,061: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:23:00,063: ERROR: main: 'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    model_trainer.main()
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+  File "C:\Users\madde\anaconda3\envs\myenvv\lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2024-08-15 15:24:59,926: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:24:59,929: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:24:59,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:24:59,932: INFO: common: created directory at: artifacts]
+[2024-08-15 15:24:59,932: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:24:59,932: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:25:00,409: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:25:00,409: INFO: main: *******************]
+[2024-08-15 15:25:00,409: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-08-15 15:25:00,409: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:25:00,409: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:25:00,409: INFO: common: created directory at: artifacts]
+[2024-08-15 15:25:00,409: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-08-15 15:25:00,873: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-15 15:25:01,049: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-15 15:25:01,056: INFO: main: *******************]
+[2024-08-15 15:25:01,056: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-08-15 15:25:01,059: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:25:01,061: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:25:01,061: INFO: common: created directory at: artifacts]
+[2024-08-15 15:25:01,062: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:25:01,062: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:25:01,064: ERROR: main: 'PrepareCallbacksConfig' object has no attribute 'monitor_metric']
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    model_trainer.main()
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\components\prepare_callbacks.py", line 41, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\shri_code\chicken_disease_classification\src\cnnClassifier\components\prepare_callbacks.py", line 32, in _create_ckpt_callbacks
+    monitor=self.config.monitor_metric,
+AttributeError: 'PrepareCallbacksConfig' object has no attribute 'monitor_metric'
+[2024-08-15 15:28:27,866: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:28:27,869: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:28:27,871: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:28:27,872: INFO: common: created directory at: artifacts]
+[2024-08-15 15:28:27,873: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:28:27,874: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:28:28,390: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:28:28,391: INFO: main: *******************]
+[2024-08-15 15:28:28,391: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-08-15 15:28:28,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:28:28,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:28:28,397: INFO: common: created directory at: artifacts]
+[2024-08-15 15:28:28,398: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-08-15 15:28:28,848: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-15 15:28:29,129: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-15 15:28:29,129: INFO: main: *******************]
+[2024-08-15 15:28:29,129: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-08-15 15:28:29,138: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:28:29,141: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:28:29,141: INFO: common: created directory at: artifacts]
+[2024-08-15 15:28:29,141: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:28:29,142: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:28:29,145: INFO: common: created directory at: artifacts\training]
+[2024-08-15 15:28:48,465: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-08-15 15:43:13,872: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:43:13,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:43:13,878: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:43:13,878: INFO: common: created directory at: artifacts]
+[2024-08-15 15:43:13,879: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:43:13,879: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:43:14,260: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:43:14,261: INFO: main: *******************]
+[2024-08-15 15:43:14,262: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-08-15 15:43:14,265: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:43:14,266: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:43:14,267: INFO: common: created directory at: artifacts]
+[2024-08-15 15:43:14,267: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-08-15 15:43:14,646: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-15 15:43:14,875: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-15 15:43:14,876: INFO: main: *******************]
+[2024-08-15 15:43:14,876: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-08-15 15:43:14,879: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:43:14,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:43:14,881: INFO: common: created directory at: artifacts]
+[2024-08-15 15:43:14,882: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-15 15:43:14,882: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-15 15:43:14,886: INFO: common: created directory at: artifacts\training]
+[2024-08-15 15:43:32,939: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-08-15 15:43:32,940: INFO: main: *******************]
+[2024-08-15 15:43:32,941: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-08-15 15:43:32,944: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:43:32,946: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:43:32,947: INFO: common: created directory at: artifacts]
+[2024-08-15 15:43:39,458: INFO: common: json file saved at: scores.json]
+[2024-08-15 15:43:39,462: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:52:13,749: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:52:13,752: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:52:13,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:52:13,755: INFO: common: created directory at: artifacts]
+[2024-08-15 15:52:13,755: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:52:13,755: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:52:14,253: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:52:57,177: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:52:57,180: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:52:57,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:52:57,185: INFO: common: created directory at: artifacts]
+[2024-08-15 15:52:57,186: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:52:57,187: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:52:57,716: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:54:17,942: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:54:17,944: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:54:17,947: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:54:17,948: INFO: common: created directory at: artifacts]
+[2024-08-15 15:54:17,948: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:54:17,949: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:54:18,413: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-15 15:57:05,933: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-15 15:57:05,938: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 15:57:05,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 15:57:05,941: INFO: common: created directory at: artifacts]
+[2024-08-15 15:57:05,942: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-15 15:57:05,942: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-08-15 15:57:06,504: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
