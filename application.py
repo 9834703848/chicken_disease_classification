@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import os
 from flask_cors import CORS, cross_origin
 from cnnClassifier.utils.common import decodeImage
-from cnnClassifier.pipeline.predict import PredictionPipeline
+from cnnClassifier.pipeline.pretrained_predict import PretrainedPredictionPipeline
 
 
 os.putenv('LANG', 'en_US.UTF-8')
@@ -15,7 +15,7 @@ CORS(app)
 class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
-        self.classifier = PredictionPipeline(self.filename)
+        self.classifier = None  # Will be initialized on first prediction
 
 
 @app.route("/", methods=['GET'])
@@ -24,25 +24,23 @@ def home():
     return render_template('index.html')
 
 
-@app.route("/train", methods=['GET','POST'])
-@cross_origin()
-def trainRoute():
-    os.system("python main.py")
-    return "Training done successfully!"
-
-
-
 @app.route("/predict", methods=['POST'])
 @cross_origin()
 def predictRoute():
-    image = request.json['image']
-    decodeImage(image, clApp.filename)
-    result = clApp.classifier.predict()
-    return jsonify(result)
+    try:
+        image = request.json['image']
+        decodeImage(image, clApp.filename)
+        
+        # Initialize classifier on first use (lazy loading)
+        if clApp.classifier is None:
+            clApp.classifier = PretrainedPredictionPipeline(clApp.filename)
+        
+        result = clApp.classifier.predict()
+        return jsonify(result)
+    except Exception as e:
+        return jsonify([{"error": str(e)}])
 
 
 if __name__ == "__main__":
     clApp = ClientApp()
-    # app.run(host='0.0.0.0', port=8080) #local host
-    app.run(host='0.0.0.0', port=8080) #for AWS
-    # app.run(host='0.0.0.0', port=80) #for AZURE
+    app.run(host='0.0.0.0', port=5000)
