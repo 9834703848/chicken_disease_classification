@@ -774,3 +774,43 @@ x==========x]
 [2026-01-23 22:08:43,320: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2026-01-23 22:08:44,762: INFO: _internal: 127.0.0.1 - - [23/Jan/2026 22:08:44] "GET / HTTP/1.1" 200 -]
 [2026-01-23 22:08:51,766: INFO: _internal: 127.0.0.1 - - [23/Jan/2026 22:08:51] "POST /predict HTTP/1.1" 200 -]
+[2026-01-23 22:52:27,623: INFO: font_manager: generated new fontManager]
+[2026-01-23 22:52:28,824: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.18.18:5000]
+[2026-01-23 22:52:28,824: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:03:04,458: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.18.18:8080]
+[2026-01-23 23:03:04,458: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:08:42,725: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.18.18:8080]
+[2026-01-23 23:08:42,725: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:17:38,043: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:17:38] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:17:50,853: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:17:50] "POST /predict HTTP/1.1" 200 -]
+[2026-01-23 23:23:44,908: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.18.18:8080]
+[2026-01-23 23:23:44,908: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:23:51,336: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:23:51] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:23:59,780: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:23:59] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:24:12,044: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:24:12] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:27:48,027: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.18.18:8080]
+[2026-01-23 23:27:48,027: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:28:01,906: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:28:01] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:28:21,887: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:28:21] "POST /predict HTTP/1.1" 200 -]
+[2026-01-23 23:36:54,656: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.18.18:8080]
+[2026-01-23 23:36:54,657: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-23 23:36:56,269: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:36:56] "GET / HTTP/1.1" 200 -]
+[2026-01-23 23:37:04,405: INFO: _internal: 134.76.62.5 - - [23/Jan/2026 23:37:04] "POST /predict HTTP/1.1" 200 -]
