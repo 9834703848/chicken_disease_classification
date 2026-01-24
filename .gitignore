@@ -133,3 +133,16 @@ dmypy.json
 
 
 /artifacts
+
+
+
+# DVC files
+dvc.yaml
+dvc.lock
+params.yaml
+scores.json
+.dvc/
+.dvcignore
+
+# Logs
+logs/
